@@ -13,4 +13,3 @@ class MembersListAPIView(generics.ListCreateAPIView):
         # if status:
         #     queryset = queryset.filter(status=status)
         return queryset
-
