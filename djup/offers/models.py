@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Offers(models.Model):
     OFFER_STATUS_LAUNCHED = 'L'
     OFFER_STATUS_PLANNING = 'P'
@@ -22,5 +23,4 @@ class Offers(models.Model):
     description = models.TextField(blank=True, null=True)
 
     def __str__(self):
-        return self.name   
-
+        return self.name
