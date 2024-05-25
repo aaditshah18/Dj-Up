@@ -3,6 +3,7 @@ from activities.models import Transactions
 from activities.serializers import TransactionsSerializer
 from rest_framework.permissions import AllowAny
 
+
 class TransactionListAPIView(generics.ListCreateAPIView):
     queryset = Transactions.objects.all()
     serializer_class = TransactionsSerializer
