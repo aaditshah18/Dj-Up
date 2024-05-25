@@ -17,5 +17,5 @@ class OfferListAPIView(generics.ListCreateAPIView):
         q_filters = Q()  # Start with an empty Q object
         if name:
             q_filters &= Q(name__icontains=name)  # Case-insensitive name search
-            
+
         return queryset.filter(q_filters)
